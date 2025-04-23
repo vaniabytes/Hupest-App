@@ -6,7 +6,7 @@ class SiswaLoginBinding extends Bindings {
   void dependencies() {
     Get.lazyPut<SiswaLoginController>(
       () => SiswaLoginController(),
-      fenix: true, // controller akan di-recreate jika dihapus
+      fenix: true,
     );
   }
 }

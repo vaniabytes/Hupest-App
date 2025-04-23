@@ -13,7 +13,7 @@ class MyApp extends StatelessWidget {
     return GetMaterialApp(
       title: 'Hupest',
       debugShowCheckedModeBanner: false,
-      initialRoute: AppPages.INITIAL,  // SplashView
+      initialRoute: AppPages.INITIAL, 
       getPages: AppPages.routes,
       theme: ThemeData(
         fontFamily: 'Inter',

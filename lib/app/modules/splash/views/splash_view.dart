@@ -125,17 +125,17 @@ class _SplashViewState extends State<SplashView> with TickerProviderStateMixin {
           backgroundColor: MaterialStateProperty.resolveWith<Color>(
             (Set<MaterialState> states) {
               if (states.contains(MaterialState.hovered)) {
-                return const Color(0xFF6C9056); // Warna hijau saat hover
+                return const Color(0xFF6C9056);
               }
-              return color; // Warna default
+              return color;
             },
           ),
           foregroundColor: MaterialStateProperty.resolveWith<Color>(
             (Set<MaterialState> states) {
               if (states.contains(MaterialState.hovered)) {
-                return Colors.white; // Warna teks saat hover
+                return Colors.white;
               }
-              return Colors.white; // Warna teks default
+              return Colors.white;
             },
           ),
           padding: MaterialStateProperty.all(
@@ -147,7 +147,7 @@ class _SplashViewState extends State<SplashView> with TickerProviderStateMixin {
           elevation: MaterialStateProperty.resolveWith<double>(
             (states) => states.contains(MaterialState.hovered) ? 8 : 4,
           ),
-          overlayColor: MaterialStateProperty.all(Colors.white.withOpacity(0.1)), // Efek ripple saat diklik
+          overlayColor: MaterialStateProperty.all(Colors.white.withOpacity(0.1)),
           shadowColor: MaterialStateProperty.resolveWith<Color>(
             (states) => states.contains(MaterialState.hovered) 
                 ? const Color(0xFF6C9056).withOpacity(0.6) 
